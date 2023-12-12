@@ -1,0 +1,123 @@
+.objectivesSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.mainHeading {
+    color: #12141D;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    /* 116.667% */
+    letter-spacing: -1px;
+}
+
+.cardPack {
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4rem;
+    padding-right: 4rem;
+    border-right: .1rem solid #E4E4E7;
+}
+
+.card:nth-of-type(3),
+.card:nth-of-type(5) {
+    border-right: none;
+}
+
+/* .card:nth-of-type(2),
+.card:nth-of-type(4) {
+    padding-right: 4rem;
+} */
+
+.twoCols {
+    grid-column: 2/ span 2;
+}
+
+.number {
+    width: 60px;
+    height: 60px;
+    font-size: 2.4rem;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 10px;
+    background: #008EFF;
+    color: white;
+}
+
+.textPack {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cardTitle {
+    color: #12141D;
+    font-family: Inter;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    /* 133.333% */
+}
+
+.moreDetail {
+    color: #12141D;
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    /* 162.5% */
+}
+
+
+@media(max-width:1510px) {
+    .cardPack {
+        padding-top: 6rem;
+        gap: 6rem;
+    }
+    
+    .card {
+        gap: 4rem;
+        padding-right: 2rem;
+    }
+    
+}
+
+
+@media(max-width:1060px) {
+    .cardPack {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .card {
+        gap: 4rem;
+        padding-right: 2rem;
+    }
+    
+    .card:nth-of-type(3),
+    .card:nth-of-type(5) {
+        border-right: .1rem solid #E4E4E7;
+    }
+    
+  
+    .twoCols {
+        grid-column: 1/ span 2;
+    }
+
+}

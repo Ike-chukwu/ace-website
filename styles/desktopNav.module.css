@@ -1,0 +1,61 @@
+.nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    margin-inline: auto;
+}
+
+.logo {
+    width: 50px;
+    height: 66px;
+}
+
+.middleSection {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+}
+
+
+.link {
+    color: #292929;
+    font-family: Open Sans Condensed;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+
+.btn {
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    font-size: 1.6rem;
+    color: white;
+    background: #25135D;
+    text-transform: capitalize;
+}
+
+
+@media(max-width:1510px) {
+    .nav {
+        width: 1000px;
+    }
+
+}
+
+
+@media(max-width:1060px) {
+    .nav {
+        width: 800px;
+    }
+
+}
+
